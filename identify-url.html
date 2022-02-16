@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Ronin的识别冬奥会项目</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="identify-url.js"></script>
+</head>
+<body style="margin-left:240px">
+<h1>识别奥运会吉祥物:</h1>
+<b style="font-size: 20px">请输入所需识别图片url:</b>
+<input type="text" name="inputImage" id="inputImage" 
+       value="" />
+<button id="thisButton">识别图片</button>
+<br><br>
+    <div id="wrapper" style="width:1020px; display:table;">
+        <div id="imageDiv" style="width: 420px; display: table-cell; font-size: 20px">
+            所需识别的图片:
+            <br><br>
+            <img id="sourceImage" width="400" />
+            <h3 id="picDescription" style="color:azure"></h3>
+        </div>
+        <div id="jsonOutput" style="width:600px; display:table-cell;font-size:20px">
+            <a style="margin-left: 90px">结果显示:</a>
+            <br /><br />
+            <textarea id="responseTextArea" class="UIInput" style="width:580px; height:535px;margin-left:90px"></textarea>
+        </div>
+
+    </div>
+</body>
+</html>

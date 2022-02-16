@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>主页面</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function pageJump1() {
+            window.location.assign('file:identify-local.html');
+        }
+        function pageJump2() {
+            window.location.assign('file:identify-url.html');
+        }
+    </script>
+</head>
+<body style="margin-top:220px">
+    <b style="font-size:60px;margin-left:420px">欢迎使用吉祥物识别页面</b>
+    <br /><br />
+    <b style="font-size: 45px; margin-left: 670px">请选择:</b>
+    <br /><br />
+    <input type="button" value="本地上传图片识别" onclick="pageJump1()" class="btn" style="margin-left: 440px" />
+    <input type="button" value="URL上传图片识别" onclick="pageJump2()" class="btn" />
+</body>
+</html>
