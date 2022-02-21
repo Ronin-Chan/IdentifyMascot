@@ -1,4 +1,3 @@
-const subscriptionKey = "145686b14e0d45059c69bf80fb6b9cb6";
 $(document).ready(function () {
     //do something
     $("#thisButton").click(function(){
@@ -6,10 +5,12 @@ $(document).ready(function () {
     });
 });
 
+const subscriptionKey = "145686b14e0d45059c69bf80fb6b9cb6";
+
 function processImage() {
     
     //Prediction API
-    var uriBase = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/2679db1e-f715-486c-a14c-0c3f5a664a34/classify/iterations/Iteration2/url";
+    var urlBase = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/2679db1e-f715-486c-a14c-0c3f5a664a34/classify/iterations/Iteration2/url";
     
     var params = {
     };
@@ -18,7 +19,7 @@ function processImage() {
     document.querySelector("#sourceImage").src = sourceImageUrl;
     //Upload the image
     $.ajax({
-        url: uriBase + "?" + $.param(params),
+        url: urlBase + "?" + $.param(params),
         // Request header
         beforeSend: function(xhrObj){
             xhrObj.setRequestHeader("Content-Type","application/json");
